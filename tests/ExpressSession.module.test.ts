@@ -1,4 +1,5 @@
 import { Logger } from '@universal-packages/logger'
+
 import { ExpressSessionModule } from '../src'
 
 describe('ExpressSessionModule', (): void => {

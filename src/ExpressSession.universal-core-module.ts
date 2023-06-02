@@ -1,6 +1,6 @@
-import { ExpressSessionOptions } from '@universal-packages/express-session'
-import { initialize } from '@universal-packages/express-controllers-session'
 import { CoreModule } from '@universal-packages/core'
+import { initialize } from '@universal-packages/express-controllers-session'
+import { ExpressSessionOptions } from '@universal-packages/express-session'
 
 export default class ExpressSessionModule extends CoreModule<ExpressSessionOptions> {
   public static readonly moduleName = 'express-session-module'
