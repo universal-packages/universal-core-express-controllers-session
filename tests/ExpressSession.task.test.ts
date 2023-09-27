@@ -5,7 +5,7 @@ import ExpressSessionTask from '../src/ExpressSession.universal-core-task'
 
 jest.mock('@universal-packages/template-populator')
 
-describe('ExpressSessionTask', (): void => {
+describe(ExpressSessionTask, (): void => {
   it('behaves as expected', async (): Promise<void> => {
     const logger = new Logger({ silence: true })
 
