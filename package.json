@@ -19,7 +19,7 @@
     "@universal-packages/express-controllers-session": "^1.1.13"
   },
   "peerDependencies": {
-    "@universal-packages/core": "^1.16.12",
+    "@universal-packages/core": "^1.16.13",
     "@universal-packages/core-express-controllers": "^1.4.0"
   },
   "devDependencies": {
