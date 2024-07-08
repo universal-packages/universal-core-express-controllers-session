@@ -1,1 +1,1 @@
-export { default as ExpressSessionModule } from './ExpressSession.universal-core-module'
+export { default as ExpressControllersSessionModule } from './ExpressControllersSession.universal-core-module'

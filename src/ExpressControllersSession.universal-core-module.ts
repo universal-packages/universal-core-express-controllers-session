@@ -2,9 +2,9 @@ import { CoreModule } from '@universal-packages/core'
 import { initialize } from '@universal-packages/express-controllers-session'
 import { ExpressSessionOptions } from '@universal-packages/express-session'
 
-export default class ExpressSessionModule extends CoreModule<ExpressSessionOptions> {
-  public static readonly moduleName = 'express-session-module'
-  public static readonly description = 'Express session initialization module'
+export default class ExpressControllersSessionModule extends CoreModule<ExpressSessionOptions> {
+  public static readonly moduleName = 'express-controllers-session-module'
+  public static readonly description = 'Express Controllers Session initialization module'
 
   public async prepare(): Promise<void> {
     initialize(this.config)

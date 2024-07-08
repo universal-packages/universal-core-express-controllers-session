@@ -17,7 +17,7 @@ npm install @universal-packages/core-express-controllers
 ## Initialization
 
 ```shell
-ucore exec express-session-task init
+ucore initialize express-controllers-session
 ```
 
 ## Running App

@@ -1,6 +1,6 @@
 import { initialize } from '@universal-packages/express-controllers-session'
 
-import { ExpressSessionModule } from '../src'
+import { ExpressControllersSessionModule } from '../src'
 
 jest.mock('@universal-packages/express-controllers-session')
 
@@ -12,10 +12,10 @@ jestCore.runBare({
   }
 })
 
-describe(ExpressSessionModule, (): void => {
+describe(ExpressControllersSessionModule, (): void => {
   it('behaves as expected', async (): Promise<void> => {
-    expect(core.coreModules.expressSessionModule).not.toBeUndefined()
-    expect(core.coreModules.expressSessionModule.config).toEqual({ registryId: 'my-app' })
+    expect(core.coreModules.expressControllersSessionModule).not.toBeUndefined()
+    expect(core.coreModules.expressControllersSessionModule.config).toEqual({ registryId: 'my-app' })
 
     expect(initialize).toHaveBeenCalledWith({ registryId: 'my-app' })
   })
