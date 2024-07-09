@@ -14,8 +14,8 @@ coreJest.runBare({
 
 describe(ExpressControllersSessionModule, (): void => {
   it('behaves as expected', async (): Promise<void> => {
-    expect(core.coreModules.expressControllersSessionModule).not.toBeUndefined()
-    expect(core.coreModules.expressControllersSessionModule.config).toEqual({ registryId: 'my-app' })
+    expect(core.coreModules.expressControllersSession).not.toBeUndefined()
+    expect(core.coreModules.expressControllersSession.config).toEqual({ registryId: 'my-app' })
 
     expect(initialize).toHaveBeenCalledWith({ registryId: 'my-app' })
   })
